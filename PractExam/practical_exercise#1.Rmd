@@ -1,0 +1,107 @@
+---
+title: "practical_exercise1"
+author: "Octavio, Jessa"
+date: "2024-03-07"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#A.Load the built-in warpbreaks dataset
+  summary(warpbreaks)
+  data("warpbreaks")
+  warpbreaks
+ 
+```
+
+```{r}
+#1. Find out, in a single command, which columns of warpbreaks are either numeric or integer. What are the data types of each column?
+ 
+  str(warpbreaks)
+  typeof(warpbreaks$breaks)
+  typeof(warpbreaks$wool)
+  typeof(warpbreaks$tension)
+```
+
+```{r}
+#2.How many observations does it have?
+ # It has 54 observatons in warpbreaks
+ wa <- nrow(warpbreaks)
+ wa
+```
+3. Is numeric a natural data type for the columns which are stored as such? Convert to
+integer when necessary.
+```{r}
+warpbreaks$breaks <- as.integer(warpbreaks$breaks)
+warpbreaks$breaks
+```
+
+
+
+B. Load the exampleFile.txt
+
+1.Read the complete file using readLines.
+```{r}
+ file <- file("exampleFile.txt")
+  read <- readLines(file)
+  read
+
+```
+
+
+```{r}
+#2.Separate the vector of lines into a vector containing comments and a vector containing the data. Hint: use grepl.
+comments <- read[grepl("^//", read)]
+comments
+
+dateLine <- read[!grepl("^//", read)]
+dateLine
+```
+
+3. Extract the date from the first comment line and display on the screen “It was created
+data.”
+```{r}
+date <- "21 May 2013"
+cat("It was created data: ", date)
+```
+
+```{r}
+#4. Read the data into a matrix as follows. A. Split the character vectors in the vector containing data lines by semicolon (;) using strsplit.
+splitData <- strsplit(dateLine, ";")
+splitData
+
+```
+
+```{r}
+#b. Find the maximum number of fields retrieved by split. Append rows that are shorter with NA's.
+maxFields <- max(sapply(splitData, length))
+maxFields
+
+row <- lapply(splitData, function(x) c(x, rep(NA, maxFields - length(x))))
+row
+```
+
+```{r}
+#c. Use unlist and matrix to transform the data to row-column format.
+Data <- unlist(row)
+
+dataMatrix <- matrix(Data, ncol = 4, nrow= 3)
+dataMatrix
+```
+
+```{r}
+#d. From comment lines 2-4, extract the names of the fields. Set these as colnames for the matrix you just created.
+fields <- comments[2:4]
+fieldNames <- gsub("//", "", fields)
+
+fieldNames
+
+rownames(dataMatrix) <- fieldNames
+print(dataMatrix)
+
+```
+
+ 
