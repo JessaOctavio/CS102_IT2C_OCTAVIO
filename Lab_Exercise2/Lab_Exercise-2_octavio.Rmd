@@ -1108,7 +1108,7 @@ link5 <- "https://www.amazon.com.au/Wet-Wild-Eyeshadow-Shimmering/product-review
 
 Product 6
 ```{r}
-link1 <- "https://www.amazon.com.au/Hanes-Mens-Short-Sleeve-Beefy-T/product-reviews/B07DM9HM8X/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews"
+link1 <- "https://www.amazon.com.au/Shy-Velvet-Womens-Sleeves-Crossover/product-reviews/B0B1NXR6QP/ref=acr_dpx_hist_5?ie=UTF8&reviewerType=all_reviews"
 
   session <- bow(link1,
                user_agent = "For Educational Purpose")
@@ -1118,7 +1118,7 @@ link1 <- "https://www.amazon.com.au/Hanes-Mens-Short-Sleeve-Beefy-T/product-revi
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- rep("Shorts", 10)
+  product_category <- rep("Dress", 10)
 
   product_name <- scrapeNodes("h1.a-size-large.a-text-ellipsis")
   product_name <- rep(product_name, 10)
@@ -1150,7 +1150,7 @@ link1 <- "https://www.amazon.com.au/Hanes-Mens-Short-Sleeve-Beefy-T/product-revi
                       ratings = product_rating))
  Sys.sleep(5)
 
-link2 <- "https://www.amazon.com.au/Hanes-Mens-Short-Sleeve-Beefy-T/product-reviews/B07DM9HM8X/ref=cm_cr_arp_d_paging_btm_next_2?ie=UTF8&reviewerType=all_reviews&pageNumber=2"
+link2 <- "https://www.amazon.com.au/Shy-Velvet-Womens-Sleeves-Crossover/product-reviews/B0B1NXR6QP/ref=acr_dpx_hist_5?ie=UTF8&reviewerType=all_reviews&pageNumber=2"
 
   session <- bow(link2,
                user_agent = "For Educational Purpose")
@@ -1160,7 +1160,7 @@ link2 <- "https://www.amazon.com.au/Hanes-Mens-Short-Sleeve-Beefy-T/product-revi
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- rep("Shorts", 10)
+  product_category <- rep("Dress", 10)
 
   product_name <- scrapeNodes("h1.a-size-large.a-text-ellipsis")
   product_name <- rep(product_name, 10)
@@ -1192,7 +1192,7 @@ link2 <- "https://www.amazon.com.au/Hanes-Mens-Short-Sleeve-Beefy-T/product-revi
                       ratings = product_rating))
  Sys.sleep(5)
 
-link3 <- "https://www.amazon.com.au/Hanes-Mens-Short-Sleeve-Beefy-T/product-reviews/B07DM9HM8X/ref=cm_cr_getr_d_paging_btm_next_3?ie=UTF8&reviewerType=all_reviews&pageNumber=3"
+link3 <- "https://www.amazon.com.au/Shy-Velvet-Womens-Sleeves-Crossover/product-reviews/B0B1NXR6QP/ref=acr_dpx_hist_5?ie=UTF8&reviewerType=all_reviews&pageNumber=3"
 
   session <- bow(link3,
                user_agent = "For Educational Purpose")
@@ -1202,7 +1202,7 @@ link3 <- "https://www.amazon.com.au/Hanes-Mens-Short-Sleeve-Beefy-T/product-revi
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- rep("Shorts", 10)
+  product_category <- rep("Dress", 10)
 
   product_name <- scrapeNodes("h1.a-size-large.a-text-ellipsis")
   product_name <- rep(product_name, 10)
@@ -1234,7 +1234,7 @@ link3 <- "https://www.amazon.com.au/Hanes-Mens-Short-Sleeve-Beefy-T/product-revi
                       ratings = product_rating))
  Sys.sleep(5)
 
-link4 <- "https://www.amazon.com.au/Hanes-Mens-Short-Sleeve-Beefy-T/product-reviews/B07DM9HM8X/ref=cm_cr_getr_d_paging_btm_next_4?ie=UTF8&reviewerType=all_reviews&pageNumber=4"
+link4 <- "https://www.amazon.com.au/Shy-Velvet-Womens-Sleeves-Crossover/product-reviews/B0B1NXR6QP/ref=acr_dpx_hist_5?ie=UTF8&reviewerType=all_reviews&pageNumber=4"
 
   session <- bow(link4,
                user_agent = "For Educational Purpose")
@@ -1244,7 +1244,7 @@ link4 <- "https://www.amazon.com.au/Hanes-Mens-Short-Sleeve-Beefy-T/product-revi
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- rep("Shorts", 10)
+  product_category <- rep("Dress", 10)
 
   product_name <- scrapeNodes("h1.a-size-large.a-text-ellipsis")
   product_name <- rep(product_name, 10)
@@ -1276,7 +1276,7 @@ link4 <- "https://www.amazon.com.au/Hanes-Mens-Short-Sleeve-Beefy-T/product-revi
                       ratings = product_rating))
  Sys.sleep(5)
 
-link5 <- "https://www.amazon.com.au/Hanes-Mens-Short-Sleeve-Beefy-T/product-reviews/B07DM9HM8X/ref=cm_cr_getr_d_paging_btm_next_5?ie=UTF8&reviewerType=all_reviews&pageNumber=5"
+link5 <- "https://www.amazon.com.au/Shy-Velvet-Womens-Sleeves-Crossover/product-reviews/B0B1NXR6QP/ref=acr_dpx_hist_5?ie=UTF8&reviewerType=all_reviews&pageNumber=5"
 
   session <- bow(link5,
                user_agent = "For Educational Purpose")
@@ -1286,7 +1286,7 @@ link5 <- "https://www.amazon.com.au/Hanes-Mens-Short-Sleeve-Beefy-T/product-revi
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- rep("Shorts", 10)
+  product_category <- rep("Dress", 10)
 
   product_name <- scrapeNodes("h1.a-size-large.a-text-ellipsis")
   product_name <- rep(product_name, 10)
@@ -1321,8 +1321,9 @@ link5 <- "https://www.amazon.com.au/Hanes-Mens-Short-Sleeve-Beefy-T/product-revi
  write.csv(productrev6, file = "product6.csv")
 ```
 
+Product 7
 ```{r}
-link1 <- "https://www.amazon.com.au/Lucky-Brand-Venice-Burnout-Notch/product-reviews/B07994LRX3/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews"
+link1 <- "https://www.amazon.com.au/Cicy-Bell-Womens-Sunflower-Graphic/product-reviews/B088TW7XXC/ref=cm_cr_arp_d_viewopt_sr?ie=UTF8&reviewerType=all_reviews"
 
   session <- bow(link1,
                user_agent = "For Educational Purpose")
@@ -1364,7 +1365,7 @@ link1 <- "https://www.amazon.com.au/Lucky-Brand-Venice-Burnout-Notch/product-rev
                       ratings = product_rating))
  Sys.sleep(5)
 
-link2 <- "https://www.amazon.com.au/Lucky-Brand-Venice-Burnout-Notch/product-reviews/B07994LRX3/ref=cm_cr_arp_d_paging_btm_next_2?ie=UTF8&reviewerType=all_reviews&pageNumber=2"
+link2 <- "https://www.amazon.com.au/Cicy-Bell-Womens-Sunflower-Graphic/product-reviews/B088TW7XXC/ref=cm_cr_arp_d_viewopt_sr?ie=UTF8&reviewerType=all_reviews&pageNumber=2"
 
   session <- bow(link2,
                user_agent = "For Educational Purpose")
@@ -1406,7 +1407,7 @@ link2 <- "https://www.amazon.com.au/Lucky-Brand-Venice-Burnout-Notch/product-rev
                       ratings = product_rating))
  Sys.sleep(5)
 
-link3 <- "https://www.amazon.com.au/Lucky-Brand-Venice-Burnout-Notch/product-reviews/B07994LRX3/ref=cm_cr_getr_d_paging_btm_next_3?ie=UTF8&reviewerType=all_reviews&pageNumber=3"
+link3 <- "https://www.amazon.com.au/Cicy-Bell-Womens-Sunflower-Graphic/product-reviews/B088TW7XXC/ref=cm_cr_arp_d_viewopt_sr?ie=UTF8&reviewerType=all_reviews&pageNumber=3"
 
   session <- bow(link3,
                user_agent = "For Educational Purpose")
@@ -1432,6 +1433,7 @@ link3 <- "https://www.amazon.com.au/Lucky-Brand-Venice-Burnout-Notch/product-rev
   product_review <- product_review[1:10]
   
   product_date <- scrapeNodes("span.a-size-base.a-color-secondary.review-date")
+  
   product_date <- product_date[1:10]
   
   product_rating <- scrapeNodes("span.a-icon-alt")
@@ -1448,7 +1450,7 @@ link3 <- "https://www.amazon.com.au/Lucky-Brand-Venice-Burnout-Notch/product-rev
                       ratings = product_rating))
  Sys.sleep(5)
 
-link4 <- "https://www.amazon.com.au/Lucky-Brand-Venice-Burnout-Notch/product-reviews/B07994LRX3/ref=cm_cr_getr_d_paging_btm_next_4?ie=UTF8&reviewerType=all_reviews&pageNumber=4"
+link4 <- "https://www.amazon.com.au/Cicy-Bell-Womens-Sunflower-Graphic/product-reviews/B088TW7XXC/ref=cm_cr_arp_d_viewopt_sr?ie=UTF8&reviewerType=all_reviews&pageNumber=4"
 
   session <- bow(link4,
                user_agent = "For Educational Purpose")
@@ -1490,7 +1492,7 @@ link4 <- "https://www.amazon.com.au/Lucky-Brand-Venice-Burnout-Notch/product-rev
                       ratings = product_rating))
  Sys.sleep(5)
 
-link5 <- "https://www.amazon.com.au/Lucky-Brand-Venice-Burnout-Notch/product-reviews/B07994LRX3/ref=cm_cr_getr_d_paging_btm_next_5?ie=UTF8&reviewerType=all_reviews&pageNumber=5"
+link5 <- "https://www.amazon.com.au/Cicy-Bell-Womens-Sunflower-Graphic/product-reviews/B088TW7XXC/ref=cm_cr_arp_d_viewopt_sr?ie=UTF8&reviewerType=all_reviews&pageNumber=5"
 
   session <- bow(link5,
                user_agent = "For Educational Purpose")
@@ -1535,8 +1537,9 @@ link5 <- "https://www.amazon.com.au/Lucky-Brand-Venice-Burnout-Notch/product-rev
  write.csv(productrev7, file = "product7.csv")
 ```
 
+Product 8
 ```{r}
-link1 <- "https://www.amazon.com.au/Gildan-Mens-Crew-T-Shirts-Multipack/product-reviews/B0931FY84J/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews"
+link1 <- "https://www.amazon.com.au/SWAROVSKI-Attract-Trilogy-Pierced-Earrings/product-reviews/B07DPRW46T/ref=cm_cr_arp_d_viewopt_sr?ie=UTF8&reviewerType=all_reviews&pageNumber=1"
 
   session <- bow(link1,
                user_agent = "For Educational Purpose")
@@ -1546,7 +1549,7 @@ link1 <- "https://www.amazon.com.au/Gildan-Mens-Crew-T-Shirts-Multipack/product-
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- rep("T-shirt", 10)
+  product_category <- rep("Earrings", 10)
 
   product_name <- scrapeNodes("h1.a-size-large.a-text-ellipsis")
   product_name <- rep(product_name, 10)
@@ -1578,7 +1581,7 @@ link1 <- "https://www.amazon.com.au/Gildan-Mens-Crew-T-Shirts-Multipack/product-
                       ratings = product_rating))
  Sys.sleep(5)
 
-link2 <- "https://www.amazon.com.au/Gildan-Mens-Crew-T-Shirts-Multipack/product-reviews/B0931FY84J/ref=cm_cr_arp_d_paging_btm_next_2?ie=UTF8&reviewerType=all_reviews&pageNumber=2"
+link2 <- "https://www.amazon.com.au/SWAROVSKI-Attract-Trilogy-Pierced-Earrings/product-reviews/B07DPRW46T/ref=cm_cr_arp_d_viewopt_sr?ie=UTF8&reviewerType=all_reviews&pageNumber=2"
 
   session <- bow(link2,
                user_agent = "For Educational Purpose")
@@ -1588,7 +1591,7 @@ link2 <- "https://www.amazon.com.au/Gildan-Mens-Crew-T-Shirts-Multipack/product-
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- rep("T-shirt", 10)
+  product_category <- rep("Earrings", 10)
 
   product_name <- scrapeNodes("h1.a-size-large.a-text-ellipsis")
   product_name <- rep(product_name, 10)
@@ -1620,7 +1623,7 @@ link2 <- "https://www.amazon.com.au/Gildan-Mens-Crew-T-Shirts-Multipack/product-
                       ratings = product_rating))
  Sys.sleep(5)
 
-link3 <- "https://www.amazon.com.au/Gildan-Mens-Crew-T-Shirts-Multipack/product-reviews/B0931FY84J/ref=cm_cr_getr_d_paging_btm_next_3?ie=UTF8&reviewerType=all_reviews&pageNumber=3"
+link3 <- "https://www.amazon.com.au/SWAROVSKI-Attract-Trilogy-Pierced-Earrings/product-reviews/B07DPRW46T/ref=cm_cr_arp_d_viewopt_sr?ie=UTF8&reviewerType=all_reviews&pageNumber=3"
 
   session <- bow(link3,
                user_agent = "For Educational Purpose")
@@ -1630,7 +1633,7 @@ link3 <- "https://www.amazon.com.au/Gildan-Mens-Crew-T-Shirts-Multipack/product-
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- rep("T-shirt", 10)
+  product_category <- rep("Earrings", 10)
 
   product_name <- scrapeNodes("h1.a-size-large.a-text-ellipsis")
   product_name <- rep(product_name, 10)
@@ -1662,7 +1665,7 @@ link3 <- "https://www.amazon.com.au/Gildan-Mens-Crew-T-Shirts-Multipack/product-
                       ratings = product_rating))
  Sys.sleep(5)
 
-link4 <- "https://www.amazon.com.au/Gildan-Mens-Crew-T-Shirts-Multipack/product-reviews/B0931FY84J/ref=cm_cr_getr_d_paging_btm_next_4?ie=UTF8&reviewerType=all_reviews&pageNumber=4"
+link4 <- "https://www.amazon.com.au/SWAROVSKI-Attract-Trilogy-Pierced-Earrings/product-reviews/B07DPRW46T/ref=cm_cr_arp_d_viewopt_sr?ie=UTF8&reviewerType=all_reviews&pageNumber=4"
 
   session <- bow(link4,
                user_agent = "For Educational Purpose")
@@ -1672,7 +1675,7 @@ link4 <- "https://www.amazon.com.au/Gildan-Mens-Crew-T-Shirts-Multipack/product-
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- rep("T-shirt", 10)
+  product_category <- rep("Earrings", 10)
 
   product_name <- scrapeNodes("h1.a-size-large.a-text-ellipsis")
   product_name <- rep(product_name, 10)
@@ -1704,7 +1707,7 @@ link4 <- "https://www.amazon.com.au/Gildan-Mens-Crew-T-Shirts-Multipack/product-
                       ratings = product_rating))
  Sys.sleep(5)
 
-link5 <- "https://www.amazon.com.au/Gildan-Mens-Crew-T-Shirts-Multipack/product-reviews/B0931FY84J/ref=cm_cr_getr_d_paging_btm_next_5?ie=UTF8&reviewerType=all_reviews&pageNumber=5"
+link5 <- "https://www.amazon.com.au/SWAROVSKI-Attract-Trilogy-Pierced-Earrings/product-reviews/B07DPRW46T/ref=cm_cr_arp_d_viewopt_sr?ie=UTF8&reviewerType=all_reviews&pageNumber=5"
 
   session <- bow(link5,
                user_agent = "For Educational Purpose")
@@ -1714,7 +1717,7 @@ link5 <- "https://www.amazon.com.au/Gildan-Mens-Crew-T-Shirts-Multipack/product-
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- rep("T-shirt", 10)
+  product_category <- rep("Earrings", 10)
 
   product_name <- scrapeNodes("h1.a-size-large.a-text-ellipsis")
   product_name <- rep(product_name, 10)
@@ -1749,8 +1752,9 @@ link5 <- "https://www.amazon.com.au/Gildan-Mens-Crew-T-Shirts-Multipack/product-
  write.csv(productrev8, file = "product8.csv")
 ```
 
+Product 9
 ```{r}
-link1 <- "https://www.amazon.com.au/Decor-Microsafe-Container-Capacity-Assorted/product-reviews/B07P8QY4T2/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews"
+link1 <- "https://www.amazon.com.au/LifeStraw-Stainless-Integrated-Insulated-/product-reviews/B08G1ZDNWP/ref=cm_cr_arp_d_viewopt_sr?ie=UTF8&reviewerType=all_reviews"
 
   session <- bow(link1,
                user_agent = "For Educational Purpose")
@@ -1760,7 +1764,7 @@ link1 <- "https://www.amazon.com.au/Decor-Microsafe-Container-Capacity-Assorted/
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- rep("Container", 10)
+  product_category <- rep("Water Bottle", 10)
 
   product_name <- scrapeNodes("h1.a-size-large.a-text-ellipsis")
   product_name <- rep(product_name, 10)
@@ -1795,7 +1799,7 @@ link1 <- "https://www.amazon.com.au/Decor-Microsafe-Container-Capacity-Assorted/
  Sys.sleep(5)
 
 
-link2 <- "https://www.amazon.com.au/Decor-Microsafe-Container-Capacity-Assorted/product-reviews/B07P8QY4T2/ref=cm_cr_arp_d_paging_btm_next_2?ie=UTF8&reviewerType=all_reviews&pageNumber=2"
+link2 <- "https://www.amazon.com.au/LifeStraw-Stainless-Integrated-Insulated/product-reviews/B08G1ZDNWP/ref=cm_cr_arp_d_viewopt_sr?ie=UTF8&reviewerType=all_reviews&pageNumber=2"
 
   session <- bow(link2,
                user_agent = "For Educational Purpose")
@@ -1805,7 +1809,7 @@ link2 <- "https://www.amazon.com.au/Decor-Microsafe-Container-Capacity-Assorted/
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- rep("Container", 10)
+  product_category <- rep("Water Bottle", 10)
 
   product_name <- scrapeNodes("h1.a-size-large.a-text-ellipsis")
   product_name <- rep(product_name, 10)
@@ -1837,7 +1841,7 @@ link2 <- "https://www.amazon.com.au/Decor-Microsafe-Container-Capacity-Assorted/
                       ratings = product_rating))
  Sys.sleep(5)
 
-link3 <- "https://www.amazon.com.au/Decor-Microsafe-Container-Capacity-Assorted/product-reviews/B07P8QY4T2/ref=cm_cr_getr_d_paging_btm_next_3?ie=UTF8&reviewerType=all_reviews&pageNumber=3"
+link3 <- "https://www.amazon.com.au/LifeStraw-Stainless-Integrated-Insulated/product-reviews/B08G1ZDNWP/ref=cm_cr_arp_d_viewopt_sr?ie=UTF8&reviewerType=all_reviews&pageNumber=3"
 
   session <- bow(link3,
                user_agent = "For Educational Purpose")
@@ -1847,7 +1851,7 @@ link3 <- "https://www.amazon.com.au/Decor-Microsafe-Container-Capacity-Assorted/
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- rep("Container", 10)
+  product_category <- rep("Water Bottle", 10)
 
   product_name <- scrapeNodes("h1.a-size-large.a-text-ellipsis")
   product_name <- rep(product_name, 10)
@@ -1879,7 +1883,7 @@ link3 <- "https://www.amazon.com.au/Decor-Microsafe-Container-Capacity-Assorted/
                       ratings = product_rating))
  Sys.sleep(5)
 
-link4 <- "https://www.amazon.com.au/Decor-Microsafe-Container-Capacity-Assorted/product-reviews/B07P8QY4T2/ref=cm_cr_getr_d_paging_btm_next_4?ie=UTF8&reviewerType=all_reviews&pageNumber=4"
+link4 <- "https://www.amazon.com.au/LifeStraw-Stainless-Integrated-Insulated/product-reviews/B08G1ZDNWP/ref=cm_cr_arp_d_viewopt_sr?ie=UTF8&reviewerType=all_reviews&pageNumber=4"
 
   session <- bow(link4,
                user_agent = "For Educational Purpose")
@@ -1889,7 +1893,7 @@ link4 <- "https://www.amazon.com.au/Decor-Microsafe-Container-Capacity-Assorted/
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- rep("Container", 10)
+  product_category <- rep("Water Bottle", 10)
 
   product_name <- scrapeNodes("h1.a-size-large.a-text-ellipsis")
   product_name <- rep(product_name, 10)
@@ -1921,7 +1925,7 @@ link4 <- "https://www.amazon.com.au/Decor-Microsafe-Container-Capacity-Assorted/
                       ratings = product_rating))
  Sys.sleep(5)
 
-link5 <- "https://www.amazon.com.au/Decor-Microsafe-Container-Capacity-Assorted/product-reviews/B07P8QY4T2/ref=cm_cr_getr_d_paging_btm_next_5?ie=UTF8&reviewerType=all_reviews&pageNumber=5"
+link5 <- "https://www.amazon.com.au/LifeStraw-Stainless-Integrated-Insulated/product-reviews/B08G1ZDNWP/ref=cm_cr_arp_d_viewopt_sr?ie=UTF8&reviewerType=all_revie&pageNumber=5"
 
   session <- bow(link5,
                user_agent = "For Educational Purpose")
@@ -1931,7 +1935,7 @@ link5 <- "https://www.amazon.com.au/Decor-Microsafe-Container-Capacity-Assorted/
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- rep("Container", 10)
+  product_category <- rep("Water Bottle", 10)
 
   product_name <- scrapeNodes("h1.a-size-large.a-text-ellipsis")
   product_name <- rep(product_name, 10)
@@ -1966,10 +1970,11 @@ link5 <- "https://www.amazon.com.au/Decor-Microsafe-Container-Capacity-Assorted/
  write.csv(productrev9, file = "product9.csv")
 ```
 
+Product 10
 ```{r}
 productrev10 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Corsair-4000X-Tempered-Mid-Tower-CC-9011204-WW/product-reviews/B08C788312/ref=cm_cr_dp_d_show_all_btm", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Michael-Kors-Womens-Travel-Wristlet/product-reviews/B08KFKWRM1/ref=cm_cr_dp_d_show_all_btm", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -1977,8 +1982,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Electronics"
-  product_name <- "CORSAIR iCUE 4000X RGB Tempered Glass Mid-Tower ATX PC Case - 3x SP120 RGB ELITE Fans - iCUE Lighting Node CORE Controller - High Airflow - Black"
+  product_category <- "Wallet"
+  product_name <- "Michael Kors Jet Set Travel double Zip Wristlet"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -1998,10 +2003,12 @@ for (page in 1:5) {
  write.csv(productrev10, file = "product10.csv")
 ```
 
+Product 11
+
 ```{r}
 productrev11 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Upgraded-Moisture-Nutrients-Gardening-Batteries/product-reviews/B0B7DQDRZC/ref=cm_cr_dp_d_show_all_btm", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Invisible-String-Patrice-Karst/product-reviews/031648623X/ref=cm_cr_dp_d_show_all_btm", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2009,8 +2016,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Gardening"
-  product_name <- "[Upgraded] Soil Moisture Meter, 4-in-1 Soil pH Tester, Soil Moisture/Light/Nutrients/pH Meter for Gardening, Lawn, Farming, Indoor & Outdoor Plants Use, No Batteries Required"
+  product_category <- "Book"
+  product_name <- "The Invisible String: 1 Paperback – Picture Book, 11 December 2018"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2030,10 +2037,11 @@ for (page in 1:5) {
 write.csv(productrev11, file = "product11.csv")
 ```
 
+Product 12
 ```{r}
 productrev12 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Razer-Ultimate-Lightest-Wireless-Charging/product-reviews/B08LYX5H6Y/ref=cm_cr_dp_d_show_all_btm", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com/i7-12650H-GeForce-Display-Backlit-AN515-58-781P/product-reviews/B0C5RSZ6N2/ref=cm_cr_dp_d_show_all_btm", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2041,8 +2049,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Mouse"
-  product_name <- "Razer Viper Ultimate Lightweight Wireless Gaming Mouse & RGB Charging Dock: Hyperspeed Wireless Technology - 20K DPI Optical Sensor - 78g - Optical Mouse Switch - 70 Hr Battery - Quartz Pink"
+  product_category <- "Laptop"
+  product_name <- "RAcer Nitro 5 Gaming Laptop | Intel 12th Gen i7-12650H | NVIDIA GeForce RTX 4060 Laptop GPU | 15.6” FHD 144Hz IPS Display | 16GB DDR5 | 1TB Gen 4 SSD | Killer Wi-Fi 6 | RGB Backlit KB | AN515-58-781P"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2062,10 +2070,11 @@ for (page in 1:5) {
 write.csv(productrev12, file = "product12.csv")
 ```
 
+Product 13
 ```{r}
 productrev13 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Under-Armour-Tech-Short-Sleeve/product-reviews/B07CZBVWFB/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Jergens-Moisturizer-Essential-Indulgent-Moisturization/product-reviews/B07QBN245V/ref=cm_cr_dp_d_show_all_btm", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2073,8 +2082,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "T-shirt"
-  product_name <- "UNDER ARMOUR Men's Tech 2.0 Short-Sleeve T-Shirt"
+  product_category <- "Lotion"
+  product_name <- "Jergens Lavender Body Butter Body and Hand Lotion, Moisturizer for Women, 7 Fl Oz (Pack of 1), with Essential Oils for Indulgent Moisturization White"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2094,10 +2103,11 @@ for (page in 1:5) {
 write.csv(productrev13, file = "product13.csv")
 ```
 
+Product 14
 ```{r}
 productrev14 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Carhartt-103296/product-reviews/B0CKL86ZLB/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com/IBOANN-Blocking-Glasses-Fashion-Eyeglasses/product-reviews/B0B779BLJH/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2105,8 +2115,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "T-shirt"
-  product_name <- "Carhartt"
+  product_category <- "Eyeglasses"
+  product_name <- "IBOANN 3 Pack Blue Light Blocking Glasses Women/Men, Round Fashion Retro Frame, Vintage Fake Eyeglasses with Clear Lens"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2129,7 +2139,7 @@ write.csv(productrev14, file = "product14.csv")
 ```{r}
 productrev15 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Urban-Classics-Mens-Shaped-Long/product-reviews/B086B3ZBFC/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Champion-Womens-GT18H-Classic-T-Shirt/product-reviews/B07SCKRK78/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2138,7 +2148,7 @@ for (page in 1:5) {
       html_text(trim = TRUE)
   }
   product_category <- "T-shirt"
-  product_name <- "Urban Classics Men's Shaped Long"
+  product_name <- "Champion Women's Classic Tee"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2158,10 +2168,11 @@ for (page in 1:5) {
 write.csv(productrev15, file = "product15.csv")
 ```
 
+Product 16
 ```{r}
 productrev16 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Venum-VENUM-03526-001-Classic-T-Shirt/product-reviews/B07RL8X45F/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Levis-Womens-Perfect-T-Shirt-Persimmon/product-reviews/B07VD3TXYT/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2170,7 +2181,7 @@ for (page in 1:5) {
       html_text(trim = TRUE)
   }
   product_category <- "T-shirt"
-  product_name <- "Venum Classic T-Shirt"
+  product_name <- "Levi's Women's The Perfect Tee"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2190,10 +2201,11 @@ for (page in 1:5) {
 write.csv(productrev16, file = "product16.csv")
 ```
 
+Product 17
 ```{r}
 productrev17 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Gildan-Cotton-Raglan-T-Shirt-G5700/product-reviews/B09B3LYTJR/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Urban-CoCo-Womens-Versatile-Stretchy/product-reviews/B0CGQH1M8X/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2201,8 +2213,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "T-shirt"
-  product_name <- "Gildan Men's Heavy Cotton 3/4 Raglan T-Shirt, Style G5700, 2-Pack"
+  product_category <- "Skirt"
+  product_name <- "Urban CoCo Women's Basic Versatile Stretchy Flared Casual Mini Skater Skirt"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2222,10 +2234,11 @@ for (page in 1:5) {
 write.csv(productrev17, file = "product17.csv")
 ```
 
+Product 18
 ```{r}
 productrev18 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Coca-Cola-CCXX007MSC3P1XX/product-reviews/B007R1NZAC/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/ZESICA-Bohemian-Printed-Elastic-Pockets/product-reviews/B07K2RHCGF/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2233,8 +2246,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "T-shirt"
-  product_name <- "Coca-Cola Men's Coke Classic T-Shirt"
+  product_category <- "Skirt"
+  product_name <- "ZESICA Women's 2023 Bohemian Floral Printed Elastic Waist A Line Maxi Skirt with Pockets"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2254,10 +2267,11 @@ for (page in 1:5) {
 write.csv(productrev18, file = "product18.csv")
 ```
 
+Product 19
 ```{r}
 productrev19 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Under-Armour-HeatGear-Compression-Long-Sleeve/product-reviews/B0872NL76Y/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/luvamia-Skorts-Waisted-Stretchy-Brilliant/product-reviews/B0BX7CXW8Q/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2265,8 +2279,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "T-shirt"
-  product_name <- "Under Armour Men's HeatGear Compression Long-Sleeve T-Shirt"
+  product_category <- "Skirt"
+  product_name <- "luvamia Skorts Skirts for Women Denim Mini Skirt Side Slit with High Waisted Jean Shorts Stretchy"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2286,10 +2300,11 @@ for (page in 1:5) {
 write.csv(productrev19, file = "product19.csv")
 ```
 
+Product 20
 ```{r}
 productrev20 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Dickies-Mens-Tall-Heavy-Weight/product-reviews/B01N6TYLVM/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/TONCHENGSD-Womens-Gothic-Pleated-Waisted/product-reviews/B08TG5DBFG/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2297,8 +2312,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "T-shirt"
-  product_name <- "Dickies Men's Heavyweight Crew Neck Short Sleeve Tee"
+  product_category <- "Skirt"
+  product_name <- "TONCHENGSD Women's Gothic Punk Plaid Pleated High Waisted Short A-line Flare Mini Skirt"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2318,10 +2333,11 @@ for (page in 1:5) {
 write.csv(productrev20, file = "product20.csv")
 ```
 
+Product 21
 ```{r}
 productrev21 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/frueo-Quick-Dry-Anti-Odor-Breathable-Sportswear/product-reviews/B0B47QW2X8/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/DC-Comics-Womens-Metallic-T-Shirt/product-reviews/B07KYZL4Y5/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2330,7 +2346,7 @@ for (page in 1:5) {
       html_text(trim = TRUE)
   }
   product_category <- "T-shirt"
-  product_name <- "frueo 3 Pack Men's Workout Running Shirts Athletic Gym Tops Quick-Dry Moisture Wicking Anti-Odor Breathable Tee Crew Neck Short Sleeve T-Shirts Outdoor Sportswear"
+  product_name <- "DC Comics Women's Wonder Woman Metallic Logo"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2350,10 +2366,11 @@ for (page in 1:5) {
 write.csv(productrev21, file = "product21.csv")
 ```
 
+Product 22
 ```{r}
 productrev22 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Hugo-Boss-Mens-T-Shirt-RN/product-reviews/B076R4Q34S/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/GAP-Womens-Crewneck-Favorite-T-Shirt/product-reviews/B0BGN6RBQD/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2362,7 +2379,7 @@ for (page in 1:5) {
       html_text(trim = TRUE)
   }
   product_category <- "T-shirt"
-  product_name <- "BOSS Hugo Mens 50325887 T-Shirt Rn 3p Co Base Layer Top - Multi"
+  product_name <- "GAP Women's 2-Pack Crewneck Favorite Tee T-Shirt"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2382,10 +2399,11 @@ for (page in 1:5) {
 write.csv(productrev22, file = "product22.csv")
 ```
 
+Product 23
 ```{r}
 productrev23 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Nautica-Short-Sleeve-V-Neck-T-Shirt/product-reviews/B077NSQ2HJ/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/CALVIN-KLEIN-Womens-Embroidery-Bright/product-reviews/B07ZGDKB5F/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2394,7 +2412,7 @@ for (page in 1:5) {
       html_text(trim = TRUE)
   }
   product_category <- "T-shirt"
-  product_name <- "NAUTICA Men's Short Sleeve Solid Slim Fit V-Neck T-Shirt"
+  product_name <- "Calvin Klein Jeans Women's CKJ CK EMBROIDERY SLIM T YAF WHT WMN TEE"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2414,10 +2432,11 @@ for (page in 1:5) {
 write.csv(productrev23, file = "product23.csv")
 ```
 
+Product 24
 ```{r}
 productrev24 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Champion-Mens-Graphic-Jersey-Muscle/product-reviews/B07DGSR1C4/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Nike-Womens-Essential-Futur-T-Shirt/product-reviews/B07FKBPY9R/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2426,7 +2445,7 @@ for (page in 1:5) {
       html_text(trim = TRUE)
   }
   product_category <- "T-shirt"
-  product_name <- "Champion Mens GT22H Graphic Jersey Muscle Sleeveless Shirt"
+  product_name <- "Nike Women's Tee Essential Icon Futur T-Shirt"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2446,10 +2465,11 @@ for (page in 1:5) {
 write.csv(productrev24, file = "product24.csv")
 ```
 
+Product 25
 ```{r}
 productrev25 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/HARLEY-DAVIDSON-Orange-Shield-T-Shirt-30290591/product-reviews/B07VKL7N9Q/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Russell-Athletic-Womens-Essential-Heather/product-reviews/B073X69XWP/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2458,7 +2478,7 @@ for (page in 1:5) {
       html_text(trim = TRUE)
   }
   product_category <- "T-shirt"
-  product_name <- "Harley-Davidson Men's Orange Bar & Shield Black T-Shirt 30290591"
+  product_name <- "Russell Athletic Womens Essential Short Sleeve T-Shirt"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2478,10 +2498,11 @@ for (page in 1:5) {
 write.csv(productrev25, file = "product25.csv")
 ```
 
+Product 26
 ```{r}
 productrev26 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Real-Essentials-Sweat-Resistant-Athletic-Performance/product-reviews/B07K2GGXVV/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Skechers-Womens-Uno-Stand-Trainers-White/product-reviews/B0CRZD9PLZ/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2489,8 +2510,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Real Essentials 5 Pack: Men's Dry-Fit Sweat Resistant Active Athletic Performance Shorts"
+  product_category <- "Shoes"
+  product_name <- "Skechers Uno Stand On Air Womens"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2510,10 +2531,11 @@ for (page in 1:5) {
 write.csv(productrev26, file = "product26.csv")
 ```
 
+product 27
 ```{r}
 productrev27 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Wrangler-Authentics-Outdoor-Comfort-Shorts/product-reviews/B075MXT3HJ/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Skechers-Womens-Street-Uno-Durabuck/product-reviews/B07WG9RVYK/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2521,8 +2543,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Wrangler Mens Performance Comfort Flex Waist Cargo Short Cargo Shorts"
+  product_category <- "Shoes"
+  product_name <- "Skechers Women's Uno - Night Shades Lace-Up Sneaker"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2542,6 +2564,7 @@ for (page in 1:5) {
 write.csv(productrev27, file = "product27.csv")
 ```
 
+Product 28
 ```{r}
 productrev28 <- data.frame()
 for (page in 1:5) {
