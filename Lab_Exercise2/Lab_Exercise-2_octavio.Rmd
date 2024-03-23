@@ -2564,11 +2564,11 @@ for (page in 1:5) {
 write.csv(productrev27, file = "product27.csv")
 ```
 
-Product 28
+//Product 28
 ```{r}
 productrev28 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Dickies-Mens-Loose-Multi-Pocket-Short/product-reviews/B0CW3F4JTT/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Converse-Unisex-Chuck-Taylor-Sneakers/product-reviews/B07KKPQNLH//ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2576,8 +2576,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Dickies Men's 13 Inch Loose Fit Multi-Pocket Work Short"
+  product_category <- "Shoes"
+  product_name <- "Converse Unisex Chuck Taylor All Star Seasonal 2019 Low Top Sneaker"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2597,10 +2597,11 @@ for (page in 1:5) {
 write.csv(productrev28, file = "product28.csv")
 ```
 
+//Product 29
 ```{r}
 productrev29 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/1994Fashion-Compression-Athletic-Baselayer-Underwear/product-reviews/B087V2GR6C/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/crocs-Womens-Classic-Mule-Ballerina/product-reviews/B0CX55WPDV/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2608,8 +2609,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "ZENGVEE 3 Pack Men's Compression Shorts Cool Dry Running Base Layer Shorts with Phone Pockets for Running,Training, Workout, Gym"
+  product_category <- "Shoes"
+  product_name <- "Crocs Unisex Adult Classic Clog"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2629,10 +2630,11 @@ for (page in 1:5) {
 write.csv(productrev29, file = "product29.csv")
 ```
 
+//Product 30
 ```{r}
 productrev30 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Nike-BV6855/product-reviews/B081PCJ7XN/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Fila-Disruptor-Low-Shoes-White/product-reviews/B000Q6SWGC/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2640,8 +2642,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Nike"
+  product_category <- "Shoes"
+  product_name <- "Fila Men's Disruptor Low Trainers, White, 6 US"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2661,10 +2663,11 @@ for (page in 1:5) {
 write.csv(productrev30, file = "product30.csv")
 ```
 
+//Product 31
 ```{r}
 productrev31 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Champion-81622-Mens-Long-Mesh/product-reviews/B0CRDWLYYG/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Leggings-Depot-JYL19-BLACK-L-ActiveFlex-Slim-fit/product-reviews/B0CFRLG8KG/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2672,8 +2675,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Champion Men's Long Mesh"
+  product_category <- "Pants"
+  product_name <- "Leggings Depot"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2693,10 +2696,11 @@ for (page in 1:5) {
 write.csv(productrev31, file = "product31.csv")
 ```
 
+//Product 32
 ```{r}
 productrev32 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Under-Armour-HeatGear-Compression-Shorts/product-reviews/B0BYDJW7LT/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/THUNDER-STAR-Patchwork-Stretch-Waisted/product-reviews/B08955TZZ4/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2704,8 +2708,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Under Armour Men's Armour HeatGear Compression Shorts"
+  product_category <- "Pants"
+  product_name <- "THUNDER STAR Women Patchwork Flare Jeans Stretch High Waisted Bell Bottom Raw Hem Denim Pants"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2725,10 +2729,11 @@ for (page in 1:5) {
 write.csv(productrev32, file = "product32.csv")
 ```
 
+//Product 33
 ```{r}
 productrev33 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Wrangler/product-reviews/B0C4YMLM2N/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/VIPONES-Stretchy-Classic-Straight-146-blue/product-reviews/B094H7V8K7/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2736,8 +2741,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Wrangler"
+  product_category <- "Pants"
+  product_name <- "VIPONES Bell Bottom Jeans for Women High Waisted Flare Jeans Ripped Denim Pants"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2757,10 +2762,11 @@ for (page in 1:5) {
 write.csv(productrev33, file = "product33.csv")
 ```
 
+//Product 34
 ```{r}
 productrev34 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Lee-Dungarees-Belted-Wyoming-Cargo/product-reviews/B089M8J461/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/heipeiwa-Womens-Winter-Stretch-Jeggings/product-reviews/B07P32Y514/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2768,8 +2774,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Lee Men's Dungarees New Belted Wyoming Cargo Short"
+  product_category <- "Pants"
+  product_name <- "heipeiwa Womens Winter Jeans Thick Skinny Pants Fleece Lined Slim Stretch Warm Jeggings"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2789,11 +2795,11 @@ for (page in 1:5) {
 write.csv(productrev34, file = "product34.csv")
 ```
 
-
+//Product 35
 ```{r}
 productrev35 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Canterbury-Advantage-Short/product-reviews/B077K29BJN/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Yehopere-Womens-Winter-Darkwashed-X-Large/product-reviews/B08MTP6HDZ/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2801,8 +2807,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Canterbury Advantage Short"
+  product_category <- "Pants"
+  product_name <- "Yehopere Women's Winter Fleece Lined Jeans Slim Fit Warm Skinny High Waist Denim Jean"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2822,10 +2828,11 @@ for (page in 1:5) {
 write.csv(productrev35, file = "product35.csv")
 ```
 
+//Product 36
 ```{r}
 productrev36 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Wrangler-Authentics-Classic-Relaxed-Pocket/product-reviews/B0CR6HS22S/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/HKCLUF-Crossbody-Designer-Handbags-Adjustable/product-reviews/B0B2WM5BRQ/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2833,8 +2840,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Wrangler Authentics Men's Classic Relaxed Fit Five Pocket Jean"
+  product_category <- "Bags"
+  product_name <- "HKCLUF Crossbody Bags for Women Designer Leather Hobo Handbags With 2 Adjustable Leopard Guitar Strap Shoulder Bucket Bags"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2854,10 +2861,11 @@ for (page in 1:5) {
 write.csv(productrev36, file = "product36.csv")
 ```
 
+//Product 37
 ```{r}
 productrev37 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/NAUTICA-Classic-Front-Stretch-Solid/product-reviews/B09S7298J6/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Laptop-Lightweight-Splice-Canvas-Handbag/product-reviews/B07RZP8Q88/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2865,8 +2873,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Nautica Men's Classic Fit Flat Front Stretch Solid Chino Deck Short"
+  product_category <- "Bags"
+  product_name <- "Women Laptop Tote Bag for Work Lightweight Splice Canvas 15.6 Inch Handbag Purse"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2886,10 +2894,11 @@ for (page in 1:5) {
 write.csv(productrev37, file = "product37.csv")
 ```
 
+//Product 38
 ```{r}
 productrev38 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Volcom-Vmonty-Stretch-Chino-Short/product-reviews/B082TJ68BZ/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/JW-PEI-Womens-Shoulder-White/product-reviews/B09QKRXSSK/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2897,8 +2906,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Volcom"
+  product_category <- "Bags"
+  product_name <- "JW PEI Women's Joy Shoulder Bag"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2918,10 +2927,11 @@ for (page in 1:5) {
 write.csv(productrev38, file = "product38.csv")
 ```
 
+//Product 39
 ```{r}
 productrev39 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/LEE-Extreme-Motion-Swope-Cargo/product-reviews/B06WVSSLJ8/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Michael-Kors-Womens-LARGE-Crossbody/product-reviews/B0CLYYGY6S/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2929,8 +2939,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Lee Mens 21861 Extreme Motion Swope Cargo Short Cargo Shorts"
+  product_category <- "Bags"
+  product_name <- "Michael Kors Jet Set Item Large East West"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2950,10 +2960,11 @@ for (page in 1:5) {
 write.csv(productrev39, file = "product39.csv")
 ```
 
+//Product 40
 ```{r}
 productrev40 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/UNIONBAY-Survivor-Belted-Cargo-Short-Reg/product-reviews/B01MT8MQBT/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Rhinestone-Evening-Sparkling-Crystal-Crossbody/product-reviews/B0969N94XV/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2961,8 +2972,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "UNIONBAY Men's Survivor Belted Cargo Short-Reg and Big & Tall Sizes"
+  product_category <- "Bags"
+  product_name <- "NOGUTU Crystal Crossbody Bags for Women Rhinestone Evening Purse for Women Rhinestone Bags with Chain Wedding for Prom Party"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -2982,10 +2993,11 @@ for (page in 1:5) {
 write.csv(productrev40, file = "product40.csv")
 ```
 
+//Product 41
 ```{r}
 productrev41 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Liberty-Imports-Athletic-Basketball-Activewear/product-reviews/B07VPL7FH7/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Guess-Womens-Noelle-Shoulder-watermelon/product-reviews/B0BP2V3R96/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -2993,8 +3005,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Liberty Imports Pack of 5 Men's Athletic Basketball Shorts Mesh Quick Dry Activewear with Pockets"
+  product_category <- "Bags"
+  product_name <- "Guess Women's Noelle Top Zip Shoulder Bag, One Size"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -3014,10 +3026,11 @@ for (page in 1:5) {
 write.csv(productrev41, file = "product41.csv")
 ```
 
+//Product 42
 ```{r}
 productrev42 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Russell-Athletic-Mens-Short-Pockets/product-reviews/B07C8778DX/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Triple-Small-Crossbody-Nude-Size/product-reviews/B09FFY6M79/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -3025,8 +3038,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Russell Athletic Men's Mesh Short with Pockets"
+  product_category <- "Bags"
+  product_name <- "FashionPuzzle Triple Zip Small Crossbody Bag"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -3046,10 +3059,11 @@ for (page in 1:5) {
 write.csv(productrev42, file = "product42.csv")
 ```
 
+//Product 43
 ```{r}
 productrev43 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Under-Armour-Short-Bottoms-Shorts/product-reviews/B0BN7SGQX2/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Nautica-Lakeside-Signature-Jaquard-Crossbody/product-reviews/B07TCBZ4RG/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -3057,8 +3071,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Under Armour UA Tech Short, Mens, Bottoms, Shorts, 10 in"
+  product_category <- "Bags"
+  product_name <- "Nautica Womens Lakeside Signature Jaquard North South Crossbody Bag"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -3078,10 +3092,11 @@ for (page in 1:5) {
 write.csv(productrev43, file = "product43.csv")
 ```
 
+//Product 44
 ```{r}
 productrev44 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/MCPORO-Gym-Shorts-Men-Comfortable/product-reviews/B098FK9DSS/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Sunsa-Shoulder-Recycled-Crossbody-Sustainable/product-reviews/B09SZHS33R/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -3089,8 +3104,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "MCPORO Gym Shorts for Men – Comfortable Quick Dry Mens Athletic Shorts"
+  product_category <- "Bags"
+  product_name <- "Sunsa Women's Canvas Shoulder Bag Recycled Jeans & Leather Vintage Crossbody Bag Grey Retro Sustainable Handbag Gift Ideas for Women, Grau Blau"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -3110,10 +3125,11 @@ for (page in 1:5) {
 write.csv(productrev44, file = "product44.csv")
 ```
 
+//Product 45
 ```{r}
 productrev45 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/LEE-Mens-Carpenter-Jean-Short/product-reviews/B09PBXGMSM/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Soperwillton-Handbag-Women-Shoulder-Satchel/product-reviews/B0734TLGBP/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -3121,8 +3137,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "LEE Men's Carpenter Jean Short"
+  product_category <- "Bags"
+  product_name <- "Soperwillton Handbag for Women Tote Bag Shoulder Bags Satchel 4pcs Purse Set"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -3142,10 +3158,11 @@ for (page in 1:5) {
 write.csv(productrev45, file = "product45.csv")
 ```
 
+//Product 47
 ```{r}
 productrev46 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Russell-Athletic-Cotton-Baseline-Pockets/product-reviews/B07HXDCCJ1/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Fashion-Synthetic-Leather-Handbags-Shoulder/product-reviews/B088WCXSP9/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -3153,8 +3170,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Russell Athletic Men's Cotton Baseline Short with Pockets"
+  product_category <- "Bags"
+  product_name <- "Women Fashion Synthetic Leather Handbags Tote Bag Shoulder Bag Top Handle Satchel Purse Set 4pcs"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -3174,10 +3191,11 @@ for (page in 1:5) {
 write.csv(productrev46, file = "product46.csv")
 ```
 
+//Product 47
 ```{r}
 productrev47 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Under-Armour-Mens-Graphic-Shorts/product-reviews/B071P2NZ91/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/NCDUANSAN-Capacity-Embroidery-Exquisite-Thickness/product-reviews/B09J5C7PNC/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -3185,8 +3203,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "Under Armour Men's UA Tech Graphic Short"
+  product_category <- "Bags"
+  product_name <- "NCDUANSAN Large Capacity Handbag Linen Cotton Flower Embroidery Retro Exquisite Doodle Fashion Shopping Bag"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -3206,10 +3224,11 @@ for (page in 1:5) {
 write.csv(productrev47, file = "product47.csv")
 ```
 
+//Product 48
 ```{r}
 productrev48 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/CARHARTT-Force-Relaxed-Ripstop-Cargo/product-reviews/B0BZL69LZM/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/ALARION-Handbags-Shoulder-Designer-Messenger/product-reviews/B07BJ1D2W4/ref=cm_cr_dp_d_show_all_btm_next_", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -3217,8 +3236,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Shorts"
-  product_name <- "CARHARTT Men's Force Relaxed Fit Ripstop Cargo Work Short"
+  product_category <- "Bags"
+  product_name <- "ALARION Womens Purses and Handbags Shoulder Bag Ladies Designer Satchel Messenger Tote Bag"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -3238,10 +3257,11 @@ for (page in 1:5) {
 write.csv(productrev48, file = "product48.csv")
 ```
 
+//Product 49
 ```{r}
 productrev49 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/HP-Display-Graphics-Keyboard-Microsoft/product-reviews/B09MDGXHMF/ref=cm_cr_dp_d_show_all_btm", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Kipling-Womens-SHOULDERBAGS-18-5x34x21-LxWxH/product-reviews/B083YCPSW8/ref=cm_cr_dp_d_show_all_btm", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -3249,8 +3269,8 @@ for (page in 1:5) {
       html_nodes(selector) %>%
       html_text(trim = TRUE)
   }
-  product_category <- "Electronics"
-  product_name <- "HP Stream Laptop | 11.6 Inch HD Display | Intel Celeron N4120 | 4GB DDR4 RAM | 64GB eMMC | Intel Graphics | Windows 11 S-Mode | QWERTZ Keyboard | White | Includes Microsoft Office 365 Single"
+  product_category <- "Bags"
+  product_name <- "Kipling Women's Art Mini Pockets with Carry Handle, One Size"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
@@ -3270,10 +3290,11 @@ for (page in 1:5) {
 write.csv(productrev49, file = "product49.csv")
 ```
 
+//Product 50
 ```{r}
 productrev50 <- data.frame()
 for (page in 1:5) {
-  link1 <- paste0("https://www.amazon.com.au/Lenovo-Ideapad-WideView-Anti-Glare-Graphics/product-reviews/B09RPRSS19/ref=cm_cr_dp_d_show_all_btm", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
+  link1 <- paste0("https://www.amazon.com.au/Redragon-K617-Keyboard-Mechanical-Supported/product-reviews/B09BVD39P8/ref=cm_cr_dp_d_show_all_btm", page, "?ie=UTF8&reviewerType=all_reviews&pageNumber=", page)
   session1 <- bow(link1, user_agent = "Educational Purpose")
 
   scrapeNodes <- function(selector) {
@@ -3282,7 +3303,7 @@ for (page in 1:5) {
       html_text(trim = TRUE)
   }
   product_category <- "Electronics"
-  product_name <- "Lenovo Ideapad 3 Slim Laptop | 14 Inch Full HD WideView Display Anti-Glare | AMD Ryzen 5 5500U | 8GB RAM | 512GB SSD | AMD Radeon Graphics | Windows 11 Home | Grey"
+  product_name <- "Redragon K617 Fizz 60% Wired RGB Gaming Keyboard, 61 Keys Hot-Swap Compact Mechanical Keyboard w/White and Grey Color Keycaps, Linear Red Switch, Pro Driver/Software Supported"
   verified_reviews <- scrapeNodes("span.a-size-mini.a-color-state.a-text-bold")[1:10]
   product_reviewer <- scrapeNodes("span.a-profile-name")[1:10]
   product_review <- scrapeNodes("span.a-size-base.review-text.review-text-content")[1:10]
