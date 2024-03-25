@@ -1,0 +1,59 @@
+---
+title: "Lab_Exercise#3_Octavio"
+author: "Octavio, Jessa"
+date: "2024-03-22"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(dplyr)
+library(rvest)
+library(polite)
+library(httr)
+library(selectr)
+
+movierevs = data.frame()
+url <- "https://www.imdb.com/title/tt0114709/reviews?ref_=tt_urv"
+
+ session <- bow(url,
+                 user_agent = "For Educational Purpose")
+
+  scrapeNodes <- function(selector){
+    scrape(session) %>%
+      html_nodes(selector) %>%
+      html_text(trim = TRUE)
+  }
+ movietitle <- rep("Toy Story",10)
+
+  reviewer <- scrapeNodes("span.display-name-link")
+  reviewer <- reviewer[1:10]
+
+  ratingtitle <- scrapeNodes("a.title")
+  ratingtitle <- ratingtitle[1:10]
+
+  moviereviews <- scrapeNodes("div.content")
+  moviereviews <- moviereviews[1:10]
+
+  reviewdate <- scrapeNodes("span.review-date")
+  reviewdate <- reviewdate[1:10]
+
+  reviewratings <- scrapeNodes("div.ipl-ratings-bar")
+  reviewratings <- reviewratings[1:10]
+
+  movierevs <- rbind(movierevs, data.frame(movie = movietitle,
+                                       name = reviewer,
+                                       title = ratingtitle,
+                                       reviews = moviereviews,
+                                       date = reviewdate,
+                                       ratings = reviewratings))
+  
+  write.csv(movierevs, file = "ToyStory_Revs.csv")
+
+```
+
+
